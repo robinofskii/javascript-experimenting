@@ -1,0 +1,62 @@
+@use "variables.scss";
+
+@font-face {
+  font-family: Roboto;
+  src: url(../../fonts/Roboto.ttf);
+}
+
+@font-face {
+  font-family: NotoSans;
+  src: url(../../fonts/NotoSans.ttf);
+}
+
+h1 {
+  font-size: 35px;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  color: variables.$color-primary;
+  margin: variables.$base-margin 0;
+}
+
+h2 {
+  font-size: 29px;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  color: variables.$color-primary;
+  margin: variables.$base-margin 0;
+}
+
+h3 {
+  font-size: 24px;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  color: variables.$color-secondary;
+  margin: calc(variables.$base-margin / 2) 0;
+}
+
+h4 {
+  font-size: 24px;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  color: variables.$text-color;
+  margin: calc(variables.$base-margin / 2) 0;
+}
+
+h5 {
+  font-size: 20px;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  color: variables.$text-color;
+  margin: calc(variables.$base-margin / 3) 0;
+}
+
+h6 {
+  font-size: 18px;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  color: variables.$color-primary;
+  margin: calc(variables.$base-margin / 4) 0;
+}
+
+p {
+  font-size: 18px;
+  font-family: NotoSans, Arial, Helvetica, sans-serif;
+  color: variables.$text-color;
+}

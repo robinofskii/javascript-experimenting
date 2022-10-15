@@ -1,0 +1,16 @@
+@use "reset.scss";
+
+@use "partials/variables.scss";
+@use "partials/typography.scss";
+
+body {
+  background-color: variables.$background-color;
+}
+
+.page-container {
+  width: 100%;
+
+  article {
+    margin: variables.$base-margin;
+  }
+}
