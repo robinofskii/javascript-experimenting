@@ -132,12 +132,13 @@ h2 {
 h3 {
   font-size: 24px;
   font-family: Roboto, Arial, Helvetica, sans-serif;
-  color: #3fd43f;
+  font-weight: 600;
+  color: #1c83c2;
   margin: 10px 0;
 }
 
 h4 {
-  font-size: 24px;
+  font-size: 22px;
   font-family: Roboto, Arial, Helvetica, sans-serif;
   font-weight: 600;
   color: #3e3e3e;

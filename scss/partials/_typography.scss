@@ -27,12 +27,13 @@ h2 {
 h3 {
   font-size: 24px;
   font-family: Roboto, Arial, Helvetica, sans-serif;
-  color: variables.$color-secondary;
+  font-weight: 600;
+  color: variables.$color-primary;
   margin: calc(variables.$base-margin / 2) 0;
 }
 
 h4 {
-  font-size: 24px;
+  font-size: 22px;
   font-family: Roboto, Arial, Helvetica, sans-serif;
   font-weight: 600;
   color: variables.$text-color;
