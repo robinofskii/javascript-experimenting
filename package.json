@@ -1,0 +1,17 @@
+{
+  "name": "javascript-experimenting",
+  "version": "1.0.0",
+  "description": "Just some screwing around with vanilla JS, HTML and SCSS",
+  "main": "js/main.js",
+  "author": "Robinofski",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "nodemon": "^2.0.20",
+    "sass": "^1.55.0"
+  },
+  "scripts": {
+    "css": "sass scss/styles.scss css/styles.css",
+    "watch": "nodemon -e scss -x 'yarn run css'"
+  }
+}
