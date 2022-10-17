@@ -1,0 +1,28 @@
+@use "partials/variables.scss";
+
+nav {
+  width: 100%;
+
+  ul {
+    padding-right: variables.$base-padding;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+    li {
+      border-bottom: 2px transparent solid;
+      transition: border 0.2s ease;
+
+      &:hover {
+        border-bottom: 2px variables.$color-primary solid;
+      }
+
+      a {
+        display: block;
+        padding: variables.$base-padding;
+        text-decoration: none;
+        color: variables.$text-color;
+      }
+    }
+  }
+}

@@ -3,6 +3,8 @@
 @use "partials/variables.scss";
 @use "partials/typography.scss";
 
+@use "navigation.scss";
+
 body {
   background-color: variables.$background-color;
 }
