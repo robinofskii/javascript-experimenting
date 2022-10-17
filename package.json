@@ -4,6 +4,7 @@
   "description": "Just some screwing around with vanilla JS, HTML and SCSS",
   "main": "js/main.js",
   "author": "Robinofski",
+  "type": "module",
   "license": "MIT",
   "private": true,
   "devDependencies": {
