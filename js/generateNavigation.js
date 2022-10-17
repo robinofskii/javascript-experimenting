@@ -27,7 +27,9 @@ export const renderNavigationItemsToList = (navElement) => {
 
     listItem.appendChild(listItemAnchor);
 
-    listItemAnchor.appendChild(document.createTextNode(item.name));
+    listItemAnchor.appendChild(
+      document.createTextNode(item.name.toLocaleUpperCase())
+    );
     list.appendChild(listItem);
   });
 
