@@ -3,6 +3,8 @@ const getDecimalFromPercentage = (percentage) => {
   return 1 + percentage / 100;
 };
 
+// * End of Generic Functions
+
 // * Yield Calculation Functions
 const getYieldForPlant = (plant, environmentFactors) => {
   let sunFactor = 1;
@@ -39,6 +41,8 @@ const getTotalYield = (input, environmentFactors) => {
   return totalYield;
 };
 
+// * End of Yield Calculation Functions
+
 // * Revenue / Profit Calculation Functions
 
 const getRevenueForPlant = (plant, environmentalFactors) => {
@@ -62,6 +66,8 @@ const getProfitForCrop = (input, environmentFactors) => {
 
   return revenue - getCostsForCrop(input);
 };
+
+// * End of Revenue / Profit Calculation Functions
 
 module.exports = {
   getYieldForPlant,
