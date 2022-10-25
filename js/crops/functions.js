@@ -37,8 +37,20 @@ const getTotalYield = (input, environmentFactors) => {
   return totalYield;
 };
 
+const getRevenueForPlant = (plant, environmentalFactors) => {
+  return getYieldForPlant(plant, environmentalFactors) * plant.price;
+};
+
+const getRevenueForCrop = (input, environmentalFactors) => {
+  const { crop, numCrops } = input;
+
+  return getRevenueForPlant(crop, environmentalFactors) * numCrops;
+};
+
 module.exports = {
   getYieldForPlant,
   getYieldForCrop,
   getTotalYield,
+  getRevenueForPlant,
+  getRevenueForCrop,
 };
