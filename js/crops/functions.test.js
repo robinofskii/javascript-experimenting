@@ -5,6 +5,7 @@ const {
   getRevenueForPlant,
   getRevenueForCrop,
   getProfitForCrop,
+  getTotalProfit,
 } = require("./functions.js");
 
 const environmentFactors = {
@@ -193,5 +194,44 @@ describe("getProfitForCrop", () => {
     };
 
     expect(getProfitForCrop(input, environmentFactors)).toBe(25);
+  });
+});
+
+describe("getTotalProfit", () => {
+  test("Get total profit for all crops with environmental factors", () => {
+    const corn = {
+      name: "corn",
+      yield: 3,
+      price: 2,
+      cost: 0.5,
+      factor: {
+        sun: {
+          low: -50,
+          medium: 0,
+          high: 50,
+        },
+      },
+    };
+
+    const pumpkin = {
+      name: "pumpkin",
+      yield: 4,
+      price: 2.5,
+      cost: 0.75,
+      factor: {
+        sun: {
+          low: -50,
+          medium: 0,
+          high: 50,
+        },
+      },
+    };
+
+    const crops = [
+      { crop: corn, numCrops: 10 },
+      { crop: pumpkin, numCrops: 2 },
+    ];
+
+    expect(getTotalProfit({ crops }, environmentFactors)).toBe(33.5);
   });
 });
