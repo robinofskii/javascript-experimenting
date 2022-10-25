@@ -8,11 +8,13 @@
   "license": "MIT",
   "private": true,
   "devDependencies": {
+    "jest": "^29.2.2",
     "nodemon": "^2.0.20",
     "sass": "^1.55.0"
   },
   "scripts": {
     "css": "sass scss/styles.scss css/styles.css",
-    "watch": "nodemon -e scss -x 'yarn run css'"
+    "watch": "nodemon -e scss -x 'yarn run css'",
+    "test": "jest"
   }
 }
