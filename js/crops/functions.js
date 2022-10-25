@@ -67,7 +67,15 @@ const getProfitForCrop = (input, environmentFactors) => {
   return revenue - getCostsForCrop(input);
 };
 
-// * End of Revenue / Profit Calculation Functions
+const getTotalProfit = (input, environmentFactors) => {
+  let totalProfit = 0;
+
+  input.crops.forEach((crop) => {
+    totalProfit += getProfitForCrop(crop, environmentFactors);
+  });
+
+  return totalProfit;
+};
 
 module.exports = {
   getYieldForPlant,
@@ -76,4 +84,5 @@ module.exports = {
   getRevenueForPlant,
   getRevenueForCrop,
   getProfitForCrop,
+  getTotalProfit,
 };
